@@ -29,7 +29,7 @@ Our dataset and models are all available at Huggingface
 | **Llama-2-13B**    | [PoT Cross Comment](https://huggingface.co/airesearch/CodeLlama-7B-Multi-Cross)     |     42.2     |
 |                   | [PoT Cross Question](https://huggingface.co/airesearch/CodeLlama-7B-Multi-Question)  |     45.1     |
 |                   | [PoT Parallel](https://huggingface.co/airesearch/CodeLlama-7B-Multi-Parallel)        |     54.6     |
-|                   | [PoT No Comment]https://huggingface.co/airesearch/CodeLlama-7B-Multi-No-Comment)     |     46.4     |
+|                   | [PoT No Comment](https://huggingface.co/airesearch/CodeLlama-7B-Multi-No-Comment)     |     46.4     |
 | **CodeLlama-7B**  | [PoT Cross Comment](https://huggingface.co/airesearch/Llama-2-13B-Multi-Cross)       |     41.1     |
 |                   | [PoT Cross Question](https://huggingface.co/airesearch/Llama-2-13B-Multi-Question)   |     40.5     |
 |                   | [PoT Parallel](https://huggingface.co/airesearch/Llama-2-13B-Multi-Parallel)         |     49.0     |
@@ -63,6 +63,7 @@ deepspeed --include localhost:0,1,2,3 train.py \
     --output_dir $OUTPUT_DIR \
     --train_method "$METHOD"
 ```
+
 ## Evaluation
 To replicate the experiment results of MGSM in our paper, run:
 Note: The `dataset_name_or_path` expects a json file with the keys `question` and `label`
